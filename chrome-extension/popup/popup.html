@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhishFormer - Security Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="extension-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-box">
+        <div class="shield-logo">🛡️</div>
+        <div>
+          <h1 class="brand-name">PhishFormer</h1>
+          <span class="brand-tag">AI Threat Scanner</span>
+        </div>
+      </div>
+      <div class="api-status" id="api-status" title="Flask Backend Connection Status">
+        <span class="status-dot"></span>
+        <span class="status-text" id="status-text">Online</span>
+      </div>
+    </header>
+
+    <!-- Active Tab URL Box -->
+    <section class="url-card">
+      <div class="url-label">Active Website URL</div>
+      <div class="url-text" id="url-text">Loading current tab...</div>
+    </section>
+
+    <!-- Risk Gauge Dashboard -->
+    <section class="gauge-section">
+      <div class="gauge-container">
+        <svg class="gauge-svg" viewBox="0 0 100 100">
+          <circle class="gauge-bg" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-fill" id="gauge-fill" cx="50" cy="50" r="42"></circle>
+        </svg>
+        <div class="gauge-content">
+          <span class="gauge-score" id="gauge-score">0%</span>
+          <span class="gauge-label">Phishing Risk</span>
+        </div>
+      </div>
+      <div class="risk-badge" id="risk-badge">SCANNING...</div>
+    </section>
+
+    <!-- Security Signals -->
+    <section class="signals-section">
+      <h2 class="section-title">Key Security Indicators</h2>
+      <div class="signals-grid" id="signals-grid">
+        <div class="signal-tag skeleton">Analyzing features...</div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recs-section" id="recs-section">
+      <div class="rec-item">🔒 Verifying SSL & Domain DNA</div>
+    </section>
+
+    <!-- Action Bar -->
+    <footer class="footer">
+      <button class="btn-rescan" id="btn-rescan">⚡ Rescan Active Tab</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

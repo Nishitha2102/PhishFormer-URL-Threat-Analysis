@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# python virtual environments & cache
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# next.js & build
+.next/
+/out/
+build/
+dist/
+
+# env files
+.env
+.env.local
+.env*.local
+
+# vercel & ide
+.vercel
+.vscode/
+.idea/
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
