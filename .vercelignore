@@ -1,0 +1,10 @@
+# Ignore Python requirements and ML models so Vercel does not try to build a 2GB Python serverless function
+requirements.txt
+Procfile
+app.py
+saved_models/
+ml-service/
+__pycache__/
+backend/
+chrome-extension/
+dataset_phishing.csv
